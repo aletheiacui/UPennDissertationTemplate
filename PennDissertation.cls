@@ -18,19 +18,19 @@
 % table of contents, etc.
 \usepackage[hidelinks]{hyperref}
 
-% Penn style guide: 
+% Penn style guide:
 %   "For the sake of readability, it is recommended that the text of the dissertation be double-spaced"
 \usepackage{setspace}
 \doublespacing
 
-% Modify the default chapter title look. 
+% Modify the default chapter title look.
 % You can delete this if you prefer the default look.
 \usepackage{titlesec}
 \titleformat{\chapter}[display]
-{\normalfont\huge\bfseries\singlespacing}{\chaptertitlename~\thechapter}{20pt}{\Huge}
+{\normalfont\huge\bfseries\singlespacing\raggedright}{\chaptertitlename~\thechapter}{20pt}{\Huge}
 \titlespacing*{\chapter}{0pt}{10pt}{30pt}
 
-% Penn paper requirement: 
+% Penn paper requirement:
 %    8 1/2 x 11 inches in size (i.e. letter paper)
 % Penn margin requirements:
 %    Left-hand margin: 1.5 inches
@@ -68,9 +68,9 @@
 \renewcommand\maketitle{
   \thispagestyle{empty}
   \begin{titlepage}
-    \setlength{\parskip}{3pt} 
+    \setlength{\parskip}{3pt}
     \setlength{\parindent}{0in}
-    
+
     \begin{center}
       \@title \par
       \@author \par
@@ -83,7 +83,7 @@
       Degree of Doctor of Philosophy \par
       \Date \par
     \end{center}
-    
+
     \vspace{3em}
 
     {Supervisor of Dissertation \par}
@@ -102,7 +102,7 @@
     \bigskip
     {Dissertation Committee: \par}
     {\Committee \par}
-      
+
   \end{titlepage}
   \clearpage
 }
@@ -111,7 +111,7 @@
 \newcommand\copyrightpage{
   % set to be "empty" to not print a page number
   \thispagestyle{empty}
-  \setlength{\parskip}{15pt} 
+  \setlength{\parskip}{15pt}
   \setlength{\parindent}{0pt}
   \null\vfil
   \begin{center}
@@ -127,7 +127,7 @@
 % 3. Dedication (optional)
 \newcommand\dedication[1]{
   \thispagestyle{plain}
-  \setlength{\parskip}{20pt} 
+  \setlength{\parskip}{20pt}
   \setlength{\parindent}{0pt}
   \null\vfil
   \begin{center}{\sl #1}\end{center}
@@ -140,7 +140,7 @@
   \addcontentsline{toc}{chapter}{Acknowledgment}
   \thispagestyle{plain}
   \setlength{\parindent}{0pt}
-  \setlength{\parskip}{0pt} 
+  \setlength{\parskip}{0pt}
   \begin{center}{\bf ACKNOWLEDGMENT}\end{center}
   \setlength{\parindent}{0.25in}
   {\normalsize #1}
@@ -151,7 +151,7 @@
 \newcommand\abstract[1]{
   \addcontentsline{toc}{chapter}{Abstract}
   \thispagestyle{plain}
-  \setlength{\parskip}{0pt} 
+  \setlength{\parskip}{0pt}
   \setlength{\parindent}{0pt}
   \begin{center}
     {\bf ABSTRACT \par}
