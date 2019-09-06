@@ -27,7 +27,7 @@
 % You can delete this if you prefer the default look.
 \usepackage{titlesec}
 \titleformat{\chapter}[display]
-{\normalfont\huge\bfseries\singlespacing\raggedright}{\chaptertitlename~\thechapter}{20pt}{\Huge}
+{\normalfont\huge\bfseries\singlespacing}{\chaptertitlename~\thechapter}{20pt}{\Huge}
 \titlespacing*{\chapter}{0pt}{10pt}{30pt}
 
 % Penn paper requirement:
@@ -39,6 +39,7 @@
 \usepackage{geometry}
 \geometry{
   letterpaper,
+  includefoot,
   left=1.5in,
   top=1in,
   right=1in,
@@ -66,7 +67,7 @@
 
 % 1. Title Page
 \renewcommand\maketitle{
-  \thispagestyle{empty}
+  \pagestyle{empty}
   \begin{titlepage}
     \setlength{\parskip}{3pt}
     \setlength{\parindent}{0in}
@@ -110,7 +111,7 @@
 % 2. Copyright Notice (optional)
 \newcommand\copyrightpage{
   % set to be "empty" to not print a page number
-  \thispagestyle{empty}
+  \pagestyle{empty}
   \setlength{\parskip}{15pt}
   \setlength{\parindent}{0pt}
   \null\vfil
@@ -126,7 +127,7 @@
 
 % 3. Dedication (optional)
 \newcommand\dedication[1]{
-  \thispagestyle{plain}
+  \pagestyle{plain}
   \setlength{\parskip}{20pt}
   \setlength{\parindent}{0pt}
   \null\vfil
@@ -138,7 +139,7 @@
 % 4. Acknowledgment (optional)
 \newcommand\acknowledgment[1]{
   \addcontentsline{toc}{chapter}{Acknowledgment}
-  \thispagestyle{plain}
+  \pagestyle{plain}
   \setlength{\parindent}{0pt}
   \setlength{\parskip}{0pt}
   \begin{center}{\bf ACKNOWLEDGMENT}\end{center}
@@ -150,7 +151,7 @@
 % 5. Abstract
 \newcommand\abstract[1]{
   \addcontentsline{toc}{chapter}{Abstract}
-  \thispagestyle{plain}
+  \pagestyle{plain}
   \setlength{\parskip}{0pt}
   \setlength{\parindent}{0pt}
   \begin{center}
