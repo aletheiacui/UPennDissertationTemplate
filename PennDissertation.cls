@@ -13,6 +13,7 @@
 \LoadClass{book}
 
 \usepackage{graphicx}
+\setcounter{secnumdepth}{4}
 
 % This creates hyperlinks within your document for references,
 % table of contents, etc.
