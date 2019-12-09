@@ -159,7 +159,6 @@
     {\bf ABSTRACT \par}
     \Title \par
     \Author \par
-    Supervisor: \Supervisor
   \end{center}
   \setlength{\parindent}{0.25in}
   {\normalsize #1}
